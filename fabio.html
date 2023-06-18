@@ -1,0 +1,581 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+		
+			<title>Meridiana – Clicca&vola – ricevuta</title>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+<style>
+.HELP
+{	position:absolute;	top:-5px;	left:350px;	width:377px;	height:150px;	display:none;	color:#1D1A70;}
+.HELP .top
+{	height:16px;/*#ABSPATH*/	background-image:url(../images/help_top.gif);	overflow:hidden}
+
+.HELP .bottom
+{height:16px;/*#ABSPATH*/background-image:url(../images/help_bottom.gif);overflow:hidden}
+
+.body
+{background-color:#C9CCDF;}
+
+.HELP .titoloHelp
+{	padding-left:15px;	font-weight:bold;	background-color:#C9CCDF;}
+
+.HELP p
+{
+margin-bottom:0;padding-bottom:0;}
+.manina
+{	cursor:hand;}
+.ics
+{position:absolute;left:350px;top:10px;}
+
+#oneri1,#oneri2
+{left:200px;top:30px;}
+
+
+/*---Stili per il box Ricerca---*/
+div#biglietto
+{	margin:10px;	border:2px solid #1D1A70;}
+
+div#biglietto h2
+{	margin-top:0;	margin-bottom:0;	color:#1D1A70;	background-color:#C6CCDB;	text-transform:none!important;	border-bottom:2px solid #1D1A70;}
+
+.bordato
+{
+border:1px solid #7F9DB9;padding:2px;padding-left:40px;padding-right:40px;}
+
+.codiceImb
+{text-align:center;}
+
+table.tab_biglietto
+{width:730px;text-align:left;padding-top:10px;}
+table.tab_biglietto tr td
+{text-align:left!important;}
+.fixWidth
+{width:180px;}
+.bgGrigio
+{background-color:#E8E8E8;}
+.smallFlyB
+{	margin:10px;	border:2px solid #1D1A70;	padding-left:100px;	padding-top:10px;padding-bottom:10px;/*#ABSPATH*/	/*background-image:url(../images/logo_hifly.gif);	 background-position:33px 13px;	background-repeat:no-repeat;*/}
+div#boxRicerca
+{width:549px;background-color:#1D1A70;float:right;margin-top:10px;margin-right:10px;}
+div#ricTop,div#ricBottom
+{clear:both;}
+
+/*------------------*/
+
+
+html
+{font-family:Arial, Helvetica, sans-serif;}
+body
+{	margin:0 auto;	padding:5px;  
+	text-align: center; }
+
+div
+{	/*margin:1px;	border:1px solid #000;*/
+	}
+
+.cL
+{clear:left;}
+
+td.importante
+{background-color:#C1E2F5!important;border-collapse:collapse!important;/*border:2px solid #333!important;*/
+font-weight:bold;}
+td.importante strong
+{
+font-weight:bold;}
+
+td.importante2
+{background-color:#C1E2F5!important;border-collapse:collapse!important;border:2px solid #333!important;font-weight:bold;	color:#FF0101;	text-decoration:underline;}
+td.importante2 strong
+{
+font-weight:bold;color:#333;}
+
+.rosso
+{	color:#FF0101;}
+
+.tabSmall
+{font-size:10px;}
+
+.sz1{width:20px;}
+.sz2{width:40px;}
+.sz3{width:60px;}
+.sz4{width:80px;}
+.sz5{width:100px;}
+.sz6{width:120px;}
+.sz7{width:140px;}
+.sz8{width:160px;}
+.sz9{width:180px;}
+.sz10{width:200px;}
+.sz11{width:220px;}
+.sz12{width:240px;}
+.sz13{width:260px;}
+.sz14{width:280px;}
+.sz15{width:300px;}
+.sz16{width:320px;}
+.sz17{width:340px;}
+.sz18{width:360px;}
+.sz19{width:380px;}
+.sz20{width:440px;}
+
+div#boxHeader ul li ul li
+{ font-size:9px; color:#666666;
+ }
+div#boxHeader ul li ul 
+{position:absolute;left:0px;top:25px; display:none; }
+
+div#boxHeader select
+{position:absolute;left:650px;top:3px;}
+
+
+.sottomenuSel
+{display:block;}
+.smaller
+{font-size:5px;}
+  .prop {    height:184px;    float:right;    width:1px;  }
+
+  .clear {    clear:both;    height:1px;    overflow:hidden;  }
+
+.cmdBlu
+{font-family:Arial, Helvetica, sans-serif;font-size:11px!important;border-style:solid;background-color:#1D1A70;color:#FFFFFF!important;border:0;margin:5px;margin-bottom:3px;padding-left:0px;margin-left:0px;text-transform:uppercase;}
+
+.cmdAzzurro
+{font-family:Arial, Helvetica, sans-serif;font-size:11px!important;border-style:solid;background-color:#003E82;color:#FFFFFF!important;border:0;margin:5px;margin-bottom:3px;padding-left:0px;margin-left:0px;text-transform:uppercase;}
+
+.cmdGrigio
+{font-family:Arial, Helvetica, sans-serif;font-size:11px!important;border-style:solid;background-color:#666;color:#FFFFFF!important;border:0;margin:5px;margin-bottom:3px;padding-left:0px;margin-left:0px;text-transform:uppercase;}
+.cmdBianco
+{font-family:Arial, Helvetica, sans-serif;font-size:11px;border-style:solid;font-weight:bold;background-color:#FFFFFF;color:#1D1A70!important;border:0;margin:5px;
+margin-bottom:0px!important;width:175px;padding:0!important;margin-left:0px!important;padding-left:0px!important;margin-right:0px!important;padding-right:0px!important;}
+
+.spacer
+{  overflow:hidden;  clear: both;  height:1px
+  }
+
+div#boxGenerale2 
+{	width:570px;	/*background-image:url(../images/background.gif);	background-repeat:repeat-y;*/
+	
+	border:1px solid #cdcdcd;	/*background-color:#D8D8D8;*/
+	position:relative;	text-align:left;	margin: 0 auto;   /* centra negli altri browser */
+	}
+
+
+div#boxGenerale
+{	width:770px;/*#ABSPATH*/	
+	background-image:url(../images/background.gif);	background-repeat:repeat-y;	
+	/*border:1px solid #000;*/
+	/*background-color:#D8D8D8;*/
+	position:relative;	text-align:left;	margin: 0 auto;   /* centra negli altri browser */
+	}
+
+
+/*---Stili per l'Header---*/
+div#boxHeader
+{height:69px;/*#ABSPATH*/background-image:url(../images/top_background.gif);position:relative}
+
+div#boxHeader h1
+{	float:left;	position:relative;	top:7px;left:7px;	width:177px;height:46px;	padding:0px;	margin:0px;	/*#ABSPATH*/background-image:url(../images/logo.gif)}
+
+ div#boxHeader h1 span
+{    display: block ;    width: 0; height: 0; line-height: 0; /* attribuisce dimensioni nulle */
+    overflow: hidden; clip: rect(0,0,0,0); /* nasconde il testo */}
+
+div#boxHeader ul
+{	float:right;	padding:0;margin:0;	width:570px;	text-transform:uppercase;	font-size:0.65em;	font-weight:bolder;	color:#1D1A70;	
+	position:relative;	top:45px;	left:5px;}
+
+div#boxHeader ul li
+{	float:left;	list-style-type:none;	padding:2px;	padding-right:3px;	
+	/*position:relative;	top:45px;	left:5px;*/}
+
+div#boxHeader ul li a
+{	color:#1D1A70;	
+	text-decoration:none;	font-family:Arial, Helvetica, sans-serif;	text-transform:uppercase;	padding:2px;}
+
+div#boxHeader ul li a:hover
+{	background-color:#1D1A70;	
+	color:#ccc;}
+div#boxHeader ul li a:active
+{	background-color:#1D1A70;	
+	color:#ccc;}
+
+
+div#boxHeader ul li ul li a
+{	color:#666;	
+	text-decoration:none;	font-family:Arial, Helvetica, sans-serif;	text-transform:uppercase;	padding:2px;}
+
+div#boxHeader ul li ul li a:hover
+{	background-color:#1D1A70;	
+	color:#ccc;}
+div#boxHeader ul li ul li a:active
+{	background-color:#1D1A70;	
+	color:#ccc;}
+
+.BG
+{	background-image:/*#ABSPATH*/url(../images/li_background.gif);	background-repeat:no-repeat;	background-position:center right}
+
+/*------------------*/
+.regular
+{display:block}
+
+.print
+{display:none;}
+
+/*---Stili per la pagina Interna---*/
+
+div#boxInterna
+{float:right;width:765px;background-color:#FFF;background-image:/*#ABSPATH*/url(../images/background_2.gif);background-position:right;background-repeat:repeat-y;}
+
+
+
+
+div#boxTop
+{clear:both;/*border-top:1px solid #FFF;border-left:1px solid #FFF;*/
+background-color:#E8E8E8;background-image:/*#ABSPATH*/url(../images/tleft.gif);background-repeat:no-repeat;background-position:top left;}
+
+div#boxTesto
+{clear:both;/*background-image:url(../images/interna_background.gif);background-position:bottom left;background-repeat:no-repeat;*/
+font-size:12px;color:#333333;}
+div#boxTesto p
+{padding-left:10px;padding-right:10px;}
+#imgClicca
+{padding:5px;}
+div#boxTesto h1
+{margin-top:4px;margin-bottom:4px;font-size:26px;color:#1D1A70;clear:left;font-family:"Times New Roman", Times, serif;padding-left:10px;}
+
+div#boxTesto a:link
+{	text-decoration:underline;	color:#1D1A70;}
+div#boxTesto a:visited
+{	text-decoration:underline;	color:#1D1A70;}
+
+div#boxTesto a:hover
+{	text-decoration:underline;	color:#ED3E13;}
+img
+{border:0;}
+
+img#imgClicca
+{	float:left;}
+ul#boxBriciole
+{	padding:0;	margin:0;	float:left;	padding-top:22px;	width:430px;padding-top:28px;}
+ul#boxBriciole li
+{	font-size:11px;	margin-left:13px;	float:left;	list-style-type:none;	padding-left:4px;	padding-right:4px;	color:#ccc;}
+
+ul#boxBriciole .old
+{	color:#1D1A70;	background-color:#FFF;}
+ul#boxBriciole .sel
+{	color:#fff;	background-color:#1D1A70;}
+ul#boxBriciole .sel
+{	color:#fff;	background-color:#1D1A70;}
+
+div#boxTesto h2
+{	clear:both;	font-size:12px;	margin-left:1px;	background-color:#1D1A70;	color:#FFF;	padding-left:20px;	margin-top:10px;	margin-bottom:0px;	padding-bottom:0px;	text-transform:uppercase;	padding-left:10px;}
+div.header
+{	clear:both;	font-size:12px;	margin-left:1px;	background-color:#1D1A70;	color:#FFF;	padding-left:10px;	margin-top:10px;	margin-bottom:0px;	padding-bottom:0px;	font-weight:bold;	text-transform:uppercase}
+div#ricBottom a
+{	color:#FFF;	text-decoration:none;	padding-left:30px;	padding-bottom:0px;	float:left;	padding-top:5px;}
+div#ricBottom input
+{	padding-left:60px;	
+	float:right;	padding-bottom:0px;}
+div#boxTesto h3
+{	clear:both;	font-size:12px;	margin-left:1px;	/*background-color:#ccc;*/
+	color:#1D1A70;	padding-left:20px;	margin-top:10px;	margin-bottom:0px;	padding-bottom:0px;}
+
+div#boxTesto table 
+{	margin:0 auto;	padding:0;	border-spacing: 0; 
+	border:0;	border-collapse:collapse;	margin-top:10px;}
+
+div#boxTesto table th
+{	text-align:center;	background-color:#CCCCCC;	color:#1D1A70;	height:27px;	padding-left:0px;	padding-right:0px;	border-left:1px solid #999;	border-right:1px solid #999;	/*font-size:0.90em*/}
+.nopadding
+{	padding-left:1px!important;	padding-right:1px!important;}
+div#boxTesto table tr
+{padding-top:5px;}
+
+.trDisabled
+{background-color:#E8E8E8;}
+
+div#boxTesto table td
+{
+text-align:center;	border:1px solid #CCC;	padding-left:10px;	padding-right:10px;}
+.thSx
+{background-image:/*#ABSPATH*/url(../images/tab_left.gif);background-position:top left;background-repeat:no-repeat;border-left:0!important;}
+.thDx
+{background-image:/*#ABSPATH*/url(../images/tab_right.gif);background-position:top right;background-repeat:no-repeat;border-right:0!important;}
+
+.fSx
+{float:left;margin:10px;width:44%;}
+
+.fDx
+{float:right;margin:10px;width:44%;}
+.fSxp
+{	float:left;}
+
+.fDxp
+{float:right;}
+.fSxp1
+{width:70px;
+float:left;}
+.fSxp1 input
+{position:relative;left:-10px;}
+.fDxp1
+{}
+
+.fSxq
+{	float:left;	position:relative; top:5px;	}
+
+.fDxq
+{float:right;}
+
+
+
+
+.sfondoGrigio
+{background-color:#E8E8E8;}
+
+/*------------------*/
+/*---Stili per il Footer---*/
+div#boxFooter
+{clear:both;height:37px;background-image:/*#ABSPATH*/url(../images/bottom_background.gif);}
+div#boxFooter ul
+{padding-right:20px;}
+
+div#boxFooter ul li
+{	float:right;	list-style-type:none;	padding:3px;	padding-top:5px;	
+	/*#ABSPATH*/background-image:url(../images/bg_lista.gif);	background-position:0 9px;	background-repeat:no-repeat;}
+.first
+{background:none!important;}
+div#boxFooter ul li a
+{	color:#666;	text-decoration:none;	font-size:0.59em;	font-family:Arial, Helvetica, sans-serif;	text-transform:uppercase;	padding:2px;}
+
+div#boxFooter ul li a:hover
+{	background-color:#666;	color:#ccc;}
+div#mailFly
+{text-align:left;}
+
+div#mailFly fieldset
+{border:0;padding:15px;}
+div#mailFly label
+{display:none;}
+
+div#mailFly h3
+{font-size:13px;font-weight:bold;color:#FFF;}
+div#mailFly div
+{font-size:12px;color:#fff;}
+
+#boxBanner1
+{padding-top:6px;padding-left:7px;}
+
+.navGiorno
+{margin-left:17px;width:730px;background-color:#ccc;color:#1D1A70;}
+.aiuto
+{	float:right;	display:inline;	padding-right:50px;}
+
+
+/* formattazione tabelle */
+
+.c1, .c2, .c3, .c4, .c5
+{}
+
+
+.c1
+{width:140px;}
+.c4,.c5
+{width:70px;}
+.label_grigia
+{	background-color:#CCCCCC;	color:#1D1A70; 
+	font-weight: bold;	margin-left:10px;	padding-left:3px;	margin-right:10px;	padding-right:3px;}
+.label_azzurra
+{	background-color:#C6CCDB;	color:#1D1A70; 
+	font-weight: bold;	margin-left:10px;	padding-left:3px;	margin-right:10px;	padding-right:3px;	margin-bottom:5px;	margin-top:5px;}
+.label_blu
+{	
+	color:#1D1A70; 
+	font-weight: bold;	margin-left:10px;	padding-left:3px;	margin-right:10px;	padding-right:3px;	padding-top:10px;}
+.label_sfondo_blu
+{	background-color:#1D1A70; 
+	color:#fff; 
+	font-weight: bold;	margin-left:10px;	padding-left:3px;	margin-right:10px;	padding-right:3px;}
+
+.pos1
+{	position:absolute;	left:20px;}
+.p30
+{	padding-left:30px;}
+.pos2
+{	position:absolute;	left:230px;}
+
+.pos3
+{	position:absolute;	left:410px;}
+.boxBooking1
+{	float:left;	position:relative;	left:20px;	width:500px;}
+
+.radioBooking1
+{position:relative;left:10px;float:left;clear:left;}
+
+.tabCalendario
+{font-family:arial;font-size:11px}
+
+.tabCalendario th
+{	background-color:#999;	color:#fff;}
+.tabCalendario th.dom
+{	background-color:#EB3B11;	color:#fff;}
+
+.tabCalendario td
+{border:1px solid #999;cursor:hand;line-height:10px
+}
+
+.tabCalendario td.sab
+{background-color:#E7E7E7}
+.tabCalendario td.dom
+{border:1px solid #EB3B11;color:#EB3B11;text-align:center;background-color:#E7E7E7}
+
+.tabCalendario caption
+{font-size:13px;color:#1C1970;font-weight:bold}
+
+span.nomeMese
+{width:500px;}
+.oggi
+{color:#FFFFFF; background-color:#000000; }
+
+
+.boxHelp
+{background-color:#C8CBDC;color:#1D1A70;}
+</style>
+<style media="print">
+div#boxMenu
+{
+	display:none!important;
+}
+
+div#boxFooter
+{
+	display:none!important;
+}
+div#boxFooter, div#boxQuickSearch
+{
+	display:none!important;
+}
+
+div#boxHeader
+{
+height:69px;
+background-image:url(../images/top_background.gif);
+position:relative
+}
+div#boxInterna
+{
+float:left;
+padding-left:20px;
+width:580px;
+background-color:#FFF;
+background-image:url(../images/background_2.gif)
+
+}
+.regular
+{
+display:none;!important
+}
+.print
+{
+display:block!important
+}
+.tab_biglietto
+{
+width:570px!important;
+}
+
+.div2
+{
+left:280px!important;
+}
+</style>
+</head>
+<body>
+
+	<div id="boxGenerale">
+		
+		<div id="boxInterna" >
+		
+			<div id="boxTesto">
+	  
+		<strong><p><STRONG>TICKETLESS<BR><U><FONT color=#ff0000>Con questa ricevuta prego recarsi direttamente al Check in il giorno della partenza</FONT></U></STRONG> </p></strong>
+	 <P>Meridiana S.p.A Sede Legale ed Amministrativa: Centro Direzionale Aeroporto Costa Smeralda 07026 Olbia (SS), Italia - Capitale Sociale euro 51.033.349,00 - R.I. Sassari 05875940156 R.E.A. Sassari 128928 - Partita IVA 01846710901. </P>
+				<p>Data di emissione:2007-12-17</p>
+					
+					<div id="biglietto"><h2>Documento di Trasporto</h2>
+					<P align=justify>Attenzione: il passeggero è tenuto a stampare questa ricevuta, o quella che verrà inviata alla casella di posta elettronica precedentemente indicata (verrà inviata una ricevuta per ciascun passeggero prenotato)&nbsp;che presenterà al check-in aeroportuale, oltre a&nbsp;un documento di identità in corso di validità.&nbsp;In caso di rischedulazione del volo, sia di orario che di aeroporto, verrà inviato via e-mail il nuovo documento di trasporto con relativa variazione. L'avvenuta ricezione dell'email sarà ritenuta valida come conferma.&nbsp;Per maggiori informazioni contattare il call center al numero <A href="http://www.meridiana.it/IG/pages/it/chiamaevola/chiamaevola.aspx" target=_blank>892928 numero a pagamento a tariffazione specifica.</A></P>
+				  <div class="codiceImb" ><strong>CODICE DI PRENOTAZIONE</strong><br><br>
+				  <strong class="bordato">QR37V </strong></div><br>
+
+<p style="float:left;width:220px;padding-left:30px;"><strong>VOLO DI ANDATA<br> 
+  giovedì 20 dicembre 2007<br>
+  FIRENZE FLR - AMSTERDAM T2 AMS</strong><br>
+  Volo: IG3421<br>
+  Partenza: 07.25<br>
+  Arrivo: 09.25<br>
+  Sottoclasse:/Class: X
+     
+</p>
+      
+<div class="spacer"></div>
+	
+			
+	<table class="tab_biglietto">
+	<tr>
+	  <td colspan="2" rowspan="2" class="bgGrigio"><p><strong>NOME</strong> Fabio <br>
+	      <strong>COGNOME</strong> Giulicchi<br>
+	    </p>	    </td>
+	  <td colspan="2" style="text-align:center!important;width:200px;" class="bgGrigio"><strong>BIGLIETTO 9803569294</strong></td>
+	  </tr>
+	<tr>
+	  <td  colspan="2"  class="center bgGrigio" style="text-align:center!important"><strong>andata</strong></td>
+	    
+	</tr>
+
+	<tr>
+	  <td colspan="2" nowrap><strong>tariffa</strong>(il prezzo indicato &egrave; comprensivo di IVA 10%) </td>
+	  <td colspan="2" >EUR 79.00&nbsp;</td>
+	   
+	 </tr>
+	<tr><td rowspan="6"><strong>Tasse e supplementi</strong></td><td nowrap>YQ - Crisis surcharge</td><td colspan="2">EUR 6.00</td></tr><tr><td nowrap>VT - Tassa di sicurezza</td><td colspan="2">EUR 1.81</td></tr><tr><td nowrap>EX - Controllo bagagli</td><td colspan="2">EUR 1.91</td></tr><tr><td nowrap>IT - Tassa d`imbarco</td><td colspan="2">EUR 6.37</td></tr><tr><td nowrap>Q  - Supplemento carburante</td><td colspan="2">EUR 38.00</td></tr><tr><td nowrap>HB - Tassa comunale </td><td colspan="2">EUR 2.50</td></tr>
+	
+	<tr>
+	  <td colspan="2" class="bgGrigio"><strong>Prezzo</strong></td>
+	  <td colspan="2"  class="bgGrigio fixWidth">EUR 135.59&nbsp;</td>
+	</tr>
+	</table>
+			
+	<table class="tab_biglietto">
+	<tr><td>Diritti amministrativi e di emissione(inclusa IVA 20%)</td>
+	<td style="width:185px; ">EUR 2.00</td>
+	</tr>	<tr class="bgGrigio"><td><strong>Prezzo complessivo</strong></td>
+	<td><strong>EUR 137.59</strong></td>
+	</tr>
+	</table>
+	<P>*Le tariffe dei voli internazionali non sono soggette ad IVA (art. 9.6DPR633/72)<STRONG></P>
+</div>
+ 
+<div><P align=center><A href="http://www.holidayautos.it/cgi-bin/liveweb.sh/QSearch.w?ctryref=ITA&amp;lang=IT&amp;aff=meridiana"><IMG height=92 src="http://www.meridiana.it/newsletter/images/TKT/banner_auto.jpg" width=275 border=0></A></A></FONT></P><BR>
+<P align=justify><STRONG><FONT size=1>CONDIZIONI GENERALI DI TRASPORTO</FONT></STRONG></P>
+<P align=justify><STRONG><FONT size=1>Il trasporto aereo entro il territorio italiano è soggetto:</FONT></STRONG><FONT size=1> <BR>alle norme del Codice della Navigazione Italiano; alle norme e alle limitazioni in materia di responsabilità stabilite dal Regolamento (CE) n.2027/97 e successive modifiche del n.889/02 e n.261/04;&nbsp; <BR>alle Condizioni Generali di Trasporto Nazionali (Passeggeri e bagagli) delle quali può essere presa visione presso scali ed agenzie Meridiana; ai regolamenti del vettore e successive modifiche del n.889/02 e n.261/04. per i passeggeri che effettuano un viaggio con destinazione finale o fermata intermedia in un Paese diverso da quello di origine, il trasporto è soggetto alle norme in materia di responsabilità stabilite dal Regolamento (CE) n.2027/97 e successiva modifica n.889/02, nonchè, per quanto da questo non previsto, alle clausole note come Convenzione di Varsavia e successivi emendamenti. </FONT><STRONG><FONT size=1>Coloro che acquistano la tariffa di continuità territoriale devono esibire al momento dell'accettazione la documentazione attestante l'appartenenza ad una delle categorie che consentono di accedere alla tariffa agevolata (valido documento d'identità,&nbsp;certificazione medica, libretto universitario in corso di validità). Se al check in viene riscontrata la mancanza di tale documentazione il passeggero non potrà essere accettato e per partire dovrà acquistare un nuovo biglietto a tariffa piena.<BR>Meridiana si riserva la possibilità di denunciare per truffa i non aventi diritto. Meridiana cura attentamente la regolarità e la puntualità dei propri servizi; non assume tuttavia alcuna responsabilità per eventuali mancate coincidenze con altri vettori. </FONT></STRONG></P>
+<P align=justify><STRONG><FONT size=1>Tempo limite di accettazione <BR></FONT></STRONG><FONT size=1>Per i voli nazionali i passeggeri devono aver completato le operazioni di accettazione almeno 35 minuti prima della prevista partenza del volo. Per i voli internazionali, intercontinentali (per Chisinau e Bucarest esclusi) i passeggeri devono aver completato le operazioni di accettazione almeno 45 minuti prima della prevista partenza del volo. Per i voli per New York i passeggeri devono aver completato le operazioni di accettazione almeno 60 minuti prima della partenza del volo. Per i voli per Pristina e Chisinau i passeggeri devono aver completato le operazioni di accettazione almeno 75 minuti prima della partenza del volo. Sui voli internazionali, intercontinentali al fine di evitare code e possibili disagi, è consigliato presentarsi al check-in due ore prima dell'imbarco. Qualora il passeggero non si presenti entro i limiti su indicati, decade qualsiasi diritto all'imbarco anche se munito di prenotazione. In caso di mancata presentazione alla partenza, Meridiana potrà annullare tutte le prenotazioni effettuate per i voli di proseguimento o di ritorno. Per evitare ritardi dovuti a congestione nelle operazioni di accettazione, Meridiana invita a raggiungere l'aeroporto un'ora prima dell'orario di partenza. </P>
+<P align=justify><STRONG>Overbooking - Mancato imbarco</STRONG><BR>Al fine di limitare gli effetti della mancata presentazione dei passeggeri regolarmente prenotati e di permettere quindi che i loro posti vengano occupati da passeggeri che diversamente non potrebbero volare sul volo prescelto, Meridiana, come le maggiori compagnie aeree, opera overbooking sulle vendite dei voli. Un attento controllo regola questa pratica che tende comunque al continuo monitoraggio sulla previsione del numero dei passeggeri che si presentano per ogni singolo volo. Meridiana applica un importo a compensazione a favore di coloro che ingiustificatamente non siano stati imbarcati a causa di indisponibilità di posti. Meridiana informa i passeggeri che in caso di negato imbarco, volo cancellato o volo ritardato di almeno due ore è possibile rivolgersi ai banchi accettazione o alle uscite di imbarco della Compagnia dove vi sarà fornito il testo che elenca i diritti del passeggero in materia di compensazione pecuniaria e di assistenza, come da Regolamento (CE) n.261/2004 art. 14 (1).</P>
+<P align=justify><STRONG>Voli operati in codeshare</STRONG><BR>Per i voli in codeshare operati da vettore diverso da Meridiana, il passeggero è sempre tenuto a verificare i termini e le condizioni del vettore operativo.</P>
+<P align=justify><STRONG><FONT size=1>Servizi minimi garantiti in caso di sciopero</FONT></STRONG><FONT size=1> <BR>In base alle vigenti normative, in caso di scioperi nel settore del trasporto aereo verranno effettuati da Meridiana i voli regolari di linea nazionale e internazionali programmati e riportati nel presente orario e nelle fascie orarie dalle ore 07.00 alle ore 10.00 e dalle ore 18.00 alle ore 21.00, nonchè gli ulteriori collegamenti con le isole che Saranno identificati dalla Direzione Generale dell'Aviazione Civile, come indispensabili ad assicurare la mobilità degli utenti del trasporto aereo. Notizie utili su tutti i voli garantiti in caso di sciopero, nonchè su altri voli che potranno essere effettuati in funzione del tipo di agitazione in atto, verranno comunque tempestivamente fornite, di volta in volta, attraverso gli organi di informazione. </FONT></P>
+<P align=justify><STRONG><FONT size=1>Bagaglio <BR>Bagagli in stiva: <BR></FONT></STRONG><FONT size=1>Sui voli nazionali è consentito il trasporto di valigie aventi dimensioni complessive non superiori a cm. 160 (altezza+lunghezza+larghezza) e con peso complessivo di 20 kg per passeggero adulto/child, 10 kg per infant, 30 kg per passeggeri Fly-pass. Sui voli Internazionali è consentita una franchigia di Kg. 30 in classe Electa e di 20 Kg in classe economica, kg.40 in classe Electa e kg. 30 in classe economica per i passeggeri Fly-Pass. Ogni collo non deve superare i 30 Kg. Per i voli nazionali l'eventuale eccedenza sarà pagata 5 euro per chilogrammo in eccesso. Per i voli internazionali, l'eventuale eccedenza sarà pagata 8 euro per chilogrammo in eccesso.<BR><STRONG>Bagaglio a mano: <BR></STRONG>in cabina un solo bagaglio le cui dimensioni non devono superare cm. 55 x cm. 40 x cm. 20 ed il peso di Kg. 8. Portabiti e valigette 24 ore sono considerati bagaglio a mano.&nbsp;I liquidi consentiti sono in piccola&nbsp; quantità. Essi dovranno infatti essere contenuti in recipienti aventi ciascuno la capacità massima di 100 millilitri (1/10 di litro) od equivalenti (es: 100 grammi) ed i&nbsp; recipienti in questione dovranno poi essere inseriti in un sacchetto di plastica trasparente e richiudibile, di capacità non superiore&nbsp; ad 1 litro (ovvero&nbsp; con dimensioni pari ad esempio a circa cm 18&nbsp; x 20). Dovrà essere possibile chiudere il sacchetto con il rispettivo contenuto (cioè i recipienti dovranno poter entrare comodamente in esso). Per ogni passeggero (infanti compresi) sarà permesso il trasporto di uno ed un solo sacchetto di plastica delle dimensioni suddette . Possono essere trasportati al di fuori del sacchetto, e non sono soggetti a limitazione di volume, le medicine ed i liquidi prescritti a fini dietetici, come gli alimenti per bambini. Tra le misure di sicurezza previste dal Programma Nazionale di Sicurezza vi è anche il divieto di trasporto nel bagaglio a mano del passeggero dei seguenti articoli: -Liquidi -Pistole giocattolo -Fionde, Coltelli e posate da cucina, Coltelli (di qualsiasi grandezza) Tagliacarte, Lamette da barba -Attrezzi professionali da lavoro -Giavellotti, Forbici, Siringhe ipodermiche (*) -Ferri per maglia -Bastoni tipo "baseball"&nbsp; -Stecca da biliardo. In caso di trasporto sui voli nazionali di bagagli speciali, come le attrezzature sportive, (sci, snowboard, biciclette con custodia, mazze da golf, surf, windsurf, etc..) e gli animali, trasportati sia in stiva che in cabina, Meridiana richiede il pagamento di una eccedenza, il cui importo può essere richiesto contattando il Call Center Meridiana al numero&nbsp;892 928&nbsp;o i rappresentanti di scalo all'aeroporto di partenza. Per il trasporto della stessa tipologia di bagaglio sui voli internazionali rimangono valide le regole di calcolo previste per l'eccedenza bagaglio.<BR>Nota (*) I passeggeri potranno trasportare Siringhe Ipodermiche nel loro bagaglio a mano solo se in possesso di una valida Carta del diabete o di una lettera del medico. I passeggeri che trasportano simili oggetti devono inoltre avvisare lo staff del check-in. In caso di ritardo nel trasporto dei bagagli, salvo che il vettore aereo non abbia preso tutte le misure possibili per evitarlo o che fosse impossibile prendere tali misure, e nel caso di distruzione, perdita o danno dei bagagli, la responsabilità per il danno è limitata a 1000 DSP (Diritti Speciali di Prelievo). In caso di bagaglio registrato, il vettore aereo è sempre responsabile del danno, salvo difetto inerente al bagaglio stesso; mentre per il bagaglio non registrato, il vettore aereo è responsabile solo se il danno gli è imputabile. I passeggeri possono beneficiare di un limite di responsabilità più elevato rilasciando una dichiarazione speciale, al più tardi al momento della registrazione, e pagando un supplemento. I Vettori non si assumono responsabilità per articoli fragili o deperibili. I seguenti articoli non dovranno essere contenuti nel bagaglio: Oggetti fragili e deteriorabili. Denaro, gioielli, oggetti in argento o oggetti di valore in genere. Campionari o documenti di affari. Materiale esplosivo, munizioni, fuochi d’artificio e razzi luminosi. Sostanze infiammabili liquide come ad esempio ricariche per accendini, coloranti, diluenti o solide quali fiammiferi. Gas compressi, materiali corrosivi, materiali infiammabili liquidi o solidi. Materiali ossidanti, quali ad esempio sostanze ossigenanti e perossidi. Materiali corrosivi, come ad esempio mercurio, acidi, alcali e batterie per automobili. Sostanze velenose ed agenti patogeni. Materiali radioattivi, materiali maleodoranti ed altre merci pericolose non possono essere portati a bordo. </FONT><STRONG>Prezzo per il trasporto di bagagli particolari sui voli nazionali/internazionali:</STRONG> animale in cabina: 30 euro (max 10kg - misure 48x33x29), animale in stiva: 40 euro (max 10kg - misure 48x33x29 cm), 60 euro (misure superiori a 48x33x29 cm), bicicletta: 30 euro, body surf: 30 euro, windsurf: 100 euro, tavole surf e kite surf: 65 euro, equipaggiamento sub: 90 euro, equipaggiamento sci: 50 euro, snowboard: 50 euro, equipaggiamento golf: 30 euro per i voli nazionali, 70 euro per i voli internazionali. I prezzi si intendono per tratta.</P>
+<P align=justify><STRONG><FONT size=1>Trasporto armi e munizioni</FONT></STRONG><FONT size=1> <BR>1) Il passeggero deve denunciare, prima dell’espletamento delle operazioni di accettazione, il possesso di armi e munizioni. 2) Le armi e le munizioni possono essere trasportate solo nei bagagliai, come bagaglio registrato. a) Armi - Le armi possono essere accettate solo se scariche, smontate ed imballate a cura del personale della Security in appositi contenitori chiusi. Il servizio è a pagamento. b) Munizioni - Le munizioni possono essere accettate solo se imballate in appositi contenitori di metallo, legno o fibra, dotati di chiusura di sicurezza e resistenti agli urti ed al fuoco.</FONT></P>
+<P align=justify><STRONG><FONT size=1>Passeggeri con mobilità ridotta.</FONT></STRONG><FONT size=1> <BR>In ottemperanza a quanto previsto dagli standard di sicurezza, Meridiana limita il numero di passeggeri con mobilità ridotta a bordo dei propri aerei. Il massimo consentito è di 2 passeggeri per volo, anche se, per motivi operativi, su determinati voli non è possibile fornire alcun tipo di assistenza particolare. Pertanto, qualora un passeggero si trovi nella situazione di aver bisogno di assistenza per effettuare l’imbarco, per salire e scendere le scale dell’aereo, per sedersi a bordo, è necessario che venga segnalato al momento della prenotazione. I passeggeri con mobilità ridotta a causa di casi clinici in corso e le donne in stato interessante all’ultimo mese di gestazione, devono essere in possesso di autorizzazione medica al viaggio. I passeggeri che possono essere trasportati esclusivamente in barella devono essere accompagnati da almeno una persona abile per l'assistenza richiesta. Il trasporto in ambulanza per l’aeroporto di partenza deve essere confermato dal passeggero, mentre all’arrivo può essere richiesto da Meridiana; sulle linee operate da MD82 può essere imbarcato un solo passeggero su barella, mentre sugli aeromobili A319 non è consentito questo tipo di trasporto. I passeggeri non vedenti non accompagnati sono previsti in numero limitato per volo, come previsto dagli standard di sicurezza della compagnia. E’ necessario indicare la necessità di assistenza in fase di prenotazione affinchè la compagnia possa predisporre tutte le operazioni di assistenza necessarie. E’ consentito gratuitamente, previa richiesta in fase di prenotazione, la presenza a bordo del cane guida, purché munito di museruola e guinzaglio. Al fine di garantire il miglior servizio sia nelle fasi d'imbarco e sbarco, sia durante il volo, i passeggeri con mobilità ridotta e che necessitano di assistenze particolari, devono presentarsi per le operazioni di accettazione almeno un'ora prima della partenza del volo.</FONT></P>
+<P align=justify><STRONG><FONT size=1>Trasporto animali domestici</FONT></STRONG><FONT size=1> <BR>Il trasporto in cabina di animali domestici (cani e gatti esclusivamente) di piccole dimensioni come bagaglio al seguito, è consentito solo a condizione che il passeggero sia in possesso di tutta la documentazione sanitaria prevista dalla vigente legislazione. L’animale deve essere posto a cura del passeggero in un contenitore resistente e sicuro con fondo assolutamente impermeabile e provvisto di un’apertura per una sufficiente aerazione; i contenitori imbarcati in cabina non devono eccedere le seguenti dimensioni: cm 48x33x29. L’animale, il contenitore e l’eventuale cibo, in cabina, non devono superare il peso complessivo di 10 Kg; inoltre, l’animale non deve emanare odore sgradevole e deve rimanere esclusivamente nel contenitore. È comunque facoltà del Comandante provvedere al trasferimento dell’animale nel bagagliaio qualora l’animale arrechi fastidio agli altri passeggeri. In ottemperanza a quanto previsto dagli standard di Compagnia, sul medesimo volo possono essere imbarcati in cabina al massimo due contenitori e non più di uno per passeggero (un solo contenitore a bordo dell’A319); è altresì ammesso l’imbarco di non più di quattro contenitori in stiva. Il servizio di trasporto in stiva non è disponibile sui voli operati con aeromobile e A319 come per esempio i voli da/per Firenze. Si rende indispensabile la prenotazione per il trasporto di animali domestici al fine di evitare spiacevoli disguidi. Per viaggi nazionali/internazionali il costo del trasporto in stiva di animali domestici dipende dalla misura del contenitore (€&nbsp;40 oppure € 60). Il trasporto in cabina alle condizioni indicate sopra costa € 30.</FONT></P>
+<P align=justify><B><FONT size=1>A bordo non è permesso l'uso di:</FONT></B><FONT size=1><BR>Per motivi di sicurezza l’uso di alcuni dispositivi elettronici a bordo è proibito. Vi ricordiamo inoltre che l’uso di suddetti strumenti durante il volo può interferire con la strumentazione di bordo ed è perseguibile a fini di legge. Vi preghiamo di tenere tali dispositivi sulla posizione OFF per tutta la durata del volo. Durante tutta la permanenza a bordo i telefoni cellulari devono rimanere spenti. Inoltre, non è permesso l’uso di walkie-talkies, di lettori CD, di PC con stampante, CD-ROM, o mouse senza filo nonché di tv portatili e di giocattoli telecomandati. Per l’uso di altri dispositivi come gameboys, registratori, laptops, calcolatrici, rasoi elettrici ecc., vi preghiamo di contattare il nostro personale di bordo. </FONT></P>
+<P align=justify><B><FONT size=1>Trasporto Infant</FONT></B><FONT size=1><BR>A bordo dei voli Meridiana è possibile trasportare un solo infant (bambini di età compresa tra 0 e 2 anni non compiuti) a seguito di un passeggero adulto; l’infant non ha diritto al posto e viaggia in grembo all’adulto che lo accompagna. Il numero massimo di passeggeri infant per volo è di 15, come previsto dagli standard di sicurezza. </FONT></P>
+<P align=justify><B><FONT size=1>Orari </FONT></B><FONT size=1><BR>Meridiana cura attentamente la regolarità e la puntualità dei propri servizi; non assume tuttavia alcuna responsabilità per eventuali ritardi, sospensioni, modifiche di orario o mancate coincidenze.</FONT>&nbsp; </FONT></P></div>
+ 
+			<!-- fine boxTesto-->
+		</div>
+		<!-- fine boxInterna-->
+ 
+		<!-- Footer1 -->
+		 
+	</div><!-- fine boxGenerale--> 
+</body>
+</html>
